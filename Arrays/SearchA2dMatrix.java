@@ -17,7 +17,7 @@ class Solution {
 	
 	//RowWiseBinarySearch
 	//Time: O(n logm)
-	//space: O(1)
+	//Space: O(1)
 	public boolean searchMatrixRowBinarySearch(int[][] matrix, int target) {
         int n=matrix.length;
         int m=matrix[0].length;
@@ -40,7 +40,7 @@ class Solution {
 	
 	//Another variant solution. Row and column sorted separately
 	//Time: O(n+m)
-	//space: O(1)
+	//Space: O(1)
     public boolean searchMatrixRowColumnSeparateSort(int[][] matrix, int target) {
         int n=matrix.length;
         int m=matrix[0].length;
