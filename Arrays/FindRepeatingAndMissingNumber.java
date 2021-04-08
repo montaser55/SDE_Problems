@@ -37,6 +37,22 @@ class Solve {
             
     }
 	
+	//SumN and SumSquareN Equation
+	//Time: O(n)
+	//Space: O(1)
+	int[] findTwoElementEquation(int nums[], int n) {
+        int repeating=0,missing=0;
+        int sumN=(n*(n+1))/2;
+        int sumSquareN=(n*(n+1)*(2*n+1))/6;
+        for(int i=0;i<n;i++){
+            sumN-=nums[i];
+            sumSquareN-=nums[i]*nums[i];
+        }
+        missing=((sumSquareN/sumN)+sumN)/2;
+        repeating=missing-sumN;
+        return new int[]{repeating,missing};
+    }
+	
 	//Count Array
 	//Time: O(n)
 	//Space: O(1)
