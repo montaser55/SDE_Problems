@@ -19,7 +19,7 @@ class GfG
     }
 	
 	//Hashing
-	//Time: O(nlogn)
+	//Time: O(n)
 	//Space: O(n)
 	int maxLenHashing(int arr[], int n)
     {
