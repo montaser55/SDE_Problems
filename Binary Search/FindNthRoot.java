@@ -1,6 +1,6 @@
 public class Main
 {
-	//Time: O(n*log2^(m*10^6))
+	//Time: O(n*log_2 (m*10^6))
 	//Auxiliary Space: O(1)
     public static double multiplyNtimes(double v,int n){
         double ans=1;
